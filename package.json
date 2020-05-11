@@ -1,0 +1,21 @@
+{
+  "name": "excel-course",
+  "version": "1.0.0",
+  "description": "JS, JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/BakeNecko/exec-course.git",
+  "author": "Dmitry Maslennikov <bake.necko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BakeNecko/exec-course/issues"
+  },
+  "homepage": "https://github.com/BakeNecko/exec-course#readme",
+  "private": false,
+  "dependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
