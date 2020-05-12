@@ -4,7 +4,9 @@
   "description": "JS, JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.config.js --open",
+    "build": "cross-env NODE_ENV=production webpack --mode production"
   },
   "repository": "git+https://github.com/BakeNecko/exec-course.git",
   "author": "Dmitry Maslennikov <bake.necko@gmail.com>",
@@ -14,8 +16,30 @@
   },
   "homepage": "https://github.com/BakeNecko/exec-course#readme",
   "private": false,
+  "browserslist": "> 0.25% ,not dead",
   "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "eslint": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "html-webpack-plugin": "^4.3.0",
+    "install": "^0.13.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "eslint-config-google": "^0.14.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
   }
 }
