@@ -14,7 +14,7 @@ const jsloader = () => {
     {
       loader: "babel-loader",
       options: {
-        presets: ["babel/preset-env"],
+        presets: ["@babel/preset-env"],
       },
     },
   ];
@@ -83,12 +83,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: jsloader(),
-        loader: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
       },
     ],
   },
